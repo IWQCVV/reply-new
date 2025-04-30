@@ -57,3 +57,4 @@ def process_data():
 if __name__ == "__main__":
     download_excel()
     process_data()
+    os.remove("data.xlsx")  # 删除下载的Excel
