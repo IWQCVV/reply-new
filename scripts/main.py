@@ -6,8 +6,8 @@ from email.mime.text import MIMEText
 
 # 配置从环境变量读取
 EXCEL_URL = os.getenv("EXCEL_URL")
-SMTP_SERVER = os.getenv("SMTP_SERVER", "mail.fudan.edu.cn")
-SMTP_PORT = int(os.getenv("SMTP_PORT", 465))
+SMTP_SERVER = "mail.fudan.edu.cn"
+SMTP_PORT = 465
 SMTP_USER = os.getenv("SMTP_USER")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
 
