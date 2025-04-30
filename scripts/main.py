@@ -50,10 +50,61 @@ def process_data():
     new_rows = df.iloc[last_row:]
 
     for _, row in new_rows.iterrows():
+        body = f"""
+        <p>Dear colleagues and friends:</p>
+    
+    <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
+    
+    <h4>Payment Instructions:</h4>
+    <p>To complete the registration, please transfer the registration fee:</p>
+    <ul>
+        <li><strong>Regular:</strong> ¥2000</li>
+        <li><strong>Students:</strong> ¥1500</li>
+    </ul>
+    
+    <p>to the following bank account <strong>before Aug 10, 2025</strong>.</p>
+    
+    <div class="bank-info">
+        <p><strong>Account Name (开户名称):</strong> 复旦大学 (Fudan University)<br>
+        <strong>Address (地址):</strong> 上海市杨浦区邯郸路220号<br>
+        <strong>Account Number (银行账号):</strong> 03326708017003441<br>
+        <strong>Bank Name (开户银行):</strong> 中国农业银行上海翔殷支行<br>
+        &nbsp;&nbsp;(Agricultural Bank of China, Shanghai Xiangyin Branch)<br>
+        <strong>联行号:</strong> 103290035039</p>
+    </div>
+    
+    <p><strong>Please:</strong></p>
+    <ol>
+        <li>Indicate <strong>the name of the participant</strong> when transferring the money</li>
+        <li>Send a screenshot of proof of payment (付款凭证截图) to Ms Xinli Yan (<a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a>)</li>
+        <li>Send the information required for the invoice/receipt</li>
+    </ol>
+    
+    <h4 class="important">Important Notes:</h4>
+    <ul>
+        <li>We can help book the Fraser Place Hotel <strong>only after receiving the registration fee</strong></li>
+        <li>The registration fee can be waived for invited speakers upon request before June 1</li>
+        <li>The gym and swimming pool in the Fraser Place Hotel are free to hotel residents</li>
+        <li>We are very sorry that we cannot help book other hotels</li>
+        <li>If you need to change the hotel or check in/out date, please let us know as soon as possible</li>
+        <li>Book your hotel early as it's very difficult to find accommodation near campus in summer, even at 50% higher prices</li>
+    </ul>
+    
+    <div class="footer">
+        <p>If you have any questions, please contact:</p>
+        <p><strong>Ms Xinli Yan</strong><br>
+        Email: <a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a><br>
+        Phone: 021-3124 3502</p>
+        
+        <p>Best regards,<br>
+        <strong>Xinli Yan</strong><br>
+        On behalf of the organizers (Huangjun Zhu, Jiangwei Shang, and You Zhou)</p>
+    </div>
+"""
         send_email(
              row["Email Address"],
             "[QCVV2025] Registration Confirmation",
-            f"尊敬的 {row['Full Name']}，您的报名已成功！"
+            body
         )
 
     if not new_rows.empty:
