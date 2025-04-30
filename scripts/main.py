@@ -46,9 +46,9 @@ def process_data():
 
     for _, row in new_rows.iterrows():
         send_email(
-            row["email"],
+            "[QCVV2025] Registration Confirmation",
             "会议报名确认",
-            f"尊敬的 {row['name']}，您的报名已成功！"
+            f"尊敬的 {row['Full Name']}，您的报名已成功！"
         )
 
     if not new_rows.empty:
