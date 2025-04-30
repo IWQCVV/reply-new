@@ -27,12 +27,16 @@ def send_email(to_email, subject, body):
     msg["Subject"] = subject
     msg["From"] = SMTP_USER
     msg["To"] = to_email
-    print(to_email)
-    print(SMTP_SERVER,SMTP_PORT)
-    with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-        server.starttls()
-        server.login(SMTP_USER, SMTP_PASSWORD)
-        server.sendmail(SMTP_USER, [to_email], msg.as_string())
+
+    try:
+        # 使用 SMTP_SSL 替代 SMTP（适用于 465 端口）
+        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
+            server.login(SMTP_USER, SMTP_PASSWORD)
+            server.sendmail(SMTP_USER, [to_email], msg.as_string())
+            print(f"邮件发送成功至 {to_email}")
+    except Exception as e:
+        print(f"邮件发送失败: {str(e)}")
+        raise  # 抛出异常以便 GitHub Actions 日志捕获
 
 def download_excel():
     response = requests.get(EXCEL_URL)
