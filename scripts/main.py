@@ -63,7 +63,7 @@ def process_data():
     </style>
 </head>
 <body>
-        <p>Dear colleagues and friends rows[Id]:</p>
+        <p>Dear colleagues and friends {rows[Id]}:</p>
     
     <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
     
