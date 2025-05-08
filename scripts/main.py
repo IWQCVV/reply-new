@@ -51,7 +51,7 @@ def process_data():
     new_rows = df.iloc[last_row:]
 
     for _, row in new_rows.iterrows():
-       body = f"""
+        body = f"""
 <html>
     <head>
         <style>
@@ -142,9 +142,7 @@ def process_data():
         send_email(
              row["Email Address"],
             "[QCVV2025] Registration Confirmation",
-            body
-        )
-
+            body)
     if not new_rows.empty:
         save_last_row(len(df))
 
