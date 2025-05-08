@@ -23,20 +23,21 @@ def save_last_row(last_row):
         f.write(str(last_row))
 
 def send_email(to_email, subject, body):
-    msg = MIMEText(body)
+    # 创建 HTML 邮件内容
+    msg = MIMEText(body, 'html', 'utf-8')
     msg["Subject"] = subject
     msg["From"] = SMTP_USER
     msg["To"] = to_email
+    msg.add_header('Content-Type', 'text/html')  # 确保内容类型声明
 
     try:
-        # 使用 SMTP_SSL 替代 SMTP（适用于 465 端口）
         with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
             server.login(SMTP_USER, SMTP_PASSWORD)
             server.sendmail(SMTP_USER, [to_email], msg.as_string())
             print(f"邮件发送成功至 {to_email}")
     except Exception as e:
         print(f"邮件发送失败: {str(e)}")
-        raise  # 抛出异常以便 GitHub Actions 日志捕获
+        raise
 
 def download_excel():
     response = requests.get(EXCEL_URL)
@@ -51,7 +52,17 @@ def process_data():
 
     for _, row in new_rows.iterrows():
         body = f"""
-        <body>
+        <html>
+<head>
+    <style>
+        body {{ font-family: Arial, sans-serif; line-height: 1.6; }}
+        h4 {{ color: #2c3e50; }}
+        .bank-info {{ background: #f8f9fa; padding: 15px; border-radius: 5px; }}
+        .important {{ color: #e74c3c; }}
+        .footer {{ margin-top: 20px; border-top: 1px solid #eee; padding-top: 10px; }}
+    </style>
+</head>
+<body>
         <p>Dear colleagues and friends rows[Id]:</p>
     
     <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
@@ -102,6 +113,7 @@ def process_data():
         On behalf of the organizers (Huangjun Zhu, Jiangwei Shang, and You Zhou)</p>
     </div>
     </body>
+</html>
 """
         send_email(
              row["Email Address"],
