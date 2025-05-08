@@ -51,27 +51,51 @@ def process_data():
     new_rows = df.iloc[last_row:]
 
     for _, row in new_rows.iterrows():
-        body = f"""
-        <html>
+       body = f"""
+<html>
 <head>
     <style>
-        body {{ font-family: Arial, sans-serif; line-height: 1.6; }}
-        h4 {{ color: #2c3e50; }}
-        .bank-info {{ background: #f8f9fa; padding: 15px; border-radius: 5px; }}
-        .important {{ color: #e74c3c; }}
-        .footer {{ margin-top: 20px; border-top: 1px solid #eee; padding-top: 10px; }}
+        body {{ 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6;
+            color: #333333;  /* 统一正文颜色为深灰 */
+        }}
+        h4 {{
+            color: #444444;  /* 深灰色标题 */
+            border-bottom: 1px solid #dddddd;  /* 添加下划线分隔 */
+            padding-bottom: 5px;
+        }}
+        .bank-info {{
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #cccccc;  /* 左侧灰边 */
+        }}
+        .important {{
+            color: #555555;  /* 深灰强调 */
+            font-weight: bold;
+        }}
+        .footer {{
+            margin-top: 20px; 
+            padding-top: 15px;
+            color: #666666;  /* 浅灰脚注 */
+            font-size: 0.9em;
+        }}
+        a {{
+            color: #1155cc;  /* 标准链接蓝 */
+            text-decoration: underline;
+        }}
     </style>
 </head>
 <body>
-        <p>Dear colleagues and friends {row["Full Name"]}:</p>
-    
+    <p>Dear colleagues and friends {row["Full Name"]}:</p>
+
     <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
-    
+
     <h4>Payment Instructions:</h4>
     <p>To complete the registration, please transfer the registration fee:</p>
     <ul>
-        <li><strong>Regular:</strong> ¥2000</li>
-        <li><strong>Students:</strong> ¥1500</li>
+        <li><span class="important">Regular:</span> ¥2000</li>
+        <li><span class="important">Students:</span> ¥1500</li>
     </ul>
     
     <p>to the following bank account <strong>before Aug 10, 2025</strong>.</p>
