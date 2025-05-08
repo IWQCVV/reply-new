@@ -139,11 +139,11 @@ def process_data():
     </body>
 </html>
 """
-    send_email(
-         row["Email Address"],
-        "[QCVV2025] Registration Confirmation",
-        body
-    )
+        send_email(
+             row["Email Address"],
+            "[QCVV2025] Registration Confirmation",
+            body
+        )
 
     if not new_rows.empty:
         save_last_row(len(df))
