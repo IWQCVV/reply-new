@@ -51,6 +51,7 @@ def process_data():
 
     for _, row in new_rows.iterrows():
         body = f"""
+        <body>
         <p>Dear colleagues and friends:</p>
     
     <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
@@ -100,6 +101,7 @@ def process_data():
         <strong>Xinli Yan</strong><br>
         On behalf of the organizers (Huangjun Zhu, Jiangwei Shang, and You Zhou)</p>
     </div>
+    </body>
 """
         send_email(
              row["Email Address"],
