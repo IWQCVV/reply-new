@@ -54,87 +54,127 @@ def process_data():
         body = f"""
 <html>
     <head>
-        <style>
-            body {{ 
-                font-family: Arial, sans-serif; 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            /* 通用样式 */
+            body {{
+                font-family: Arial, sans-serif;
                 line-height: 1.6;
-                color: #333333;  /* 统一正文颜色为深灰 */
+                color: #333333;
+                margin: 20px;
+                -webkit-text-size-adjust: 100%;
+                mso-line-height-rule: exactly;
             }}
+            /* Outlook兼容样式 */
+            .ExternalClass {{ width: 100%; }}
+            .ExternalClass, .ExternalClass p, .ExternalClass span,
+            .ExternalClass font, .ExternalClass td, .ExternalClass div {{ line-height: 100%; }}
+            
             h4 {{
-                color: #444444;  /* 深灰色标题 */
-                border-bottom: 1px solid #dddddd;  /* 添加下划线分隔 */
+                color: #444444;
+                border-bottom: 1px solid #dddddd;
                 padding-bottom: 5px;
+                mso-line-height-rule: exactly;
             }}
+            
             .bank-info {{
+                border-left: 4px solid #cccccc !important;
+                mso-border-left-alt: solid #cccccc 4px; /* Outlook专用 */
                 padding: 15px;
                 margin: 15px 0;
-                border-left: 4px solid #cccccc;  /* 左侧灰边 */
+                background-color: #f8f8f8;
             }}
+            
             .important {{
-                color: #555555;  /* 深灰强调 */
+                color: #555555;
                 font-weight: bold;
+                background-color: #f8f9fa;
+                padding: 2px 4px;
+                mso-color-alt: #555555; /* Outlook备用 */
             }}
+            
             .footer {{
-                margin-top: 20px; 
+                margin-top: 20px;
                 padding-top: 15px;
-                color: #666666;  /* 浅灰脚注 */
+                color: #666666;
                 font-size: 0.9em;
+                border-top: 1px solid #eeeeee;
             }}
+            
             a {{
-                color: #1155cc;  /* 标准链接蓝 */
+                color: #1155cc;
                 text-decoration: underline;
+                mso-style-priority: 99;
+            }}
+            
+            /* 响应式表格 */
+            @media screen and (max-width: 600px) {{
+                .bank-info-table td {{
+                    display: block;
+                    width: 100% !important;
+                }}
             }}
         </style>
     </head>
     <body>
-        <p>Dear colleagues and friends {row["Full Name"]}:</p>
+        <p>Dear colleagues and friends {row["Family Name"]}:</p>
     
         <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
     
         <h4>Payment Instructions:</h4>
         <p>To complete the registration, please transfer the registration fee:</p>
         <ul>
-            <li><span class="important">Regular:</span> ¥2000</li>
-            <li><span class="important">Students:</span> ¥1500</li>
+            <li><span class="important">Regular:</span> CNY 2000</li>
+            <li><span class="important">Students:</span> CNY 1500</li>
         </ul>
         
         <p>to the following bank account <strong>before Aug 10, 2025</strong>.</p>
         
         <div class="bank-info">
-            <p><strong>Account Name (开户名称):</strong> 复旦大学 (Fudan University)<br>
-            <strong>Address (地址):</strong> 上海市杨浦区邯郸路220号<br>
-            <strong>Account Number (银行账号):</strong> 03326708017003441<br>
-            <strong>Bank Name (开户银行):</strong> 中国农业银行上海翔殷支行<br>
-            &nbsp;&nbsp;(Agricultural Bank of China, Shanghai Xiangyin Branch)<br>
-            <strong>联行号:</strong> 103290035039</p>
+
+            <table class="bank-info-table" cellpadding="8" style="width: 100%;">
+                <tr><td><strong>Account Name:</strong></td><td>复旦大学 (Fudan University)</td></tr>
+                <tr><td><strong>Address:</strong></td><td>上海市杨浦区邯郸路220号</td></tr>
+                <tr><td><strong>Account No.:</strong></td><td>03326708017003441</td></tr>
+                <tr><td><strong>Bank Name:</strong></td><td>中国农业银行上海翔殷支行<br>(Agricultural Bank of China, Shanghai Xiangyin Branch)</td></tr>
+                <tr><td><strong>联行号:</strong></td><td>103290035039</td></tr>
+            </table>
         </div>
         
         <p><strong>Please:</strong></p>
         <ol>
-            <li>Indicate <strong>the name of the participant</strong> when transferring the money</li>
-            <li>Send a screenshot of proof of payment (付款凭证截图) to Ms Xinli Yan (<a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a>)</li>
-            <li>Send the information required for the invoice/receipt</li>
+            <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo</li>
+            <li>Email payment confirmation to Ms Xinli Yan:
+                <a href="mailto:iwqcvv2025@fudan.edu.cn" style="word-break: break-all;">iwqcvv2025@fudan.edu.cn</a>
+            </li>
+            <li>Provide invoice details:
+                <ul>
+                    <li>单位名称 (Organization Name)</li>
+                    <li>纳税人识别号 (Tax ID)</li>
+                    <li>发票类型 (Invoice Type: 普通发票/增值税专用发票)</li>
+                </ul>
+            </li>
         </ol>
         
-        <h4 class="important">Important Notes:</h4>
+        <h4>Important Notes:</h4>
         <ul>
-            <li>We can help book the Fraser Place Hotel <strong>only after receiving the registration fee</strong></li>
-            <li>The registration fee can be waived for invited speakers upon request before June 1</li>
-            <li>The gym and swimming pool in the Fraser Place Hotel are free to hotel residents</li>
-            <li>We are very sorry that we cannot help book other hotels</li>
-            <li>If you need to change the hotel or check in/out date, please let us know as soon as possible</li>
-            <li>Book your hotel early as it's very difficult to find accommodation near campus in summer, even at 50% higher prices</li>
+            <li>Hotel booking at Fraser Place <strong>requires completed payment</strong></li>
+            <li>Invited speakers may request fee waiver before June 1</li>
+            <li>Hotel amenities include complimentary gym and pool access</li>
+            <li>Early booking strongly recommended due to high demand</li>
         </ul>
         
         <div class="footer">
-            <p>If you have any questions, please contact:</p>
+            <p>Contact Information:</p>
             <p><strong>Ms Xinli Yan</strong><br>
-            Email: <a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a><br>
-            Phone: 021-3124 3502</p>
+            Conference Coordinator<br>
+            Email: <a href="mailto:iwqcvv2025@fudan.edu.cn">iwqcvv2025@fudan.edu.cn</a><br>
+            Tel: +86-21-3124 3502</p>
             
-            <p>Best regards,<br>
-            <strong>Xinli Yan</strong><br>
-            On behalf of the organizers (Huangjun Zhu, Jiangwei Shang, and You Zhou)</p>
+            <p style="margin-top: 15px;">Best regards,<br>
+            <strong>IWQCVV 2025 Organizing Committee</strong><br>
+            Huangjun Zhu, Jiangwei Shang, You Zhou</p>
         </div>
     </body>
 </html>
