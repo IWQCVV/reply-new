@@ -118,7 +118,7 @@ def process_data():
         </style>
     </head>
     <body>
-        <p>Dear colleagues and friends {row["Family Name"]}:</p>
+        <p>Dear {row["Title1"]} {row["Given Name"]} {row["Family Name"]}:</p>
     
         <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
     
@@ -138,7 +138,7 @@ def process_data():
                 <tr><td><strong>Address:</strong></td><td>上海市杨浦区邯郸路220号</td></tr>
                 <tr><td><strong>Account No.:</strong></td><td>03326708017003441</td></tr>
                 <tr><td><strong>Bank Name:</strong></td><td>中国农业银行上海翔殷支行<br>(Agricultural Bank of China, Shanghai Xiangyin Branch)</td></tr>
-                <tr><td><strong>联行号:</strong></td><td>103290035039</td></tr>
+                <tr><td><strong>Interbank Routing number:</strong></td><td>103290035039</td></tr>
             </table>
         </div>
         
@@ -150,16 +150,16 @@ def process_data():
             </li>
             <li>Provide invoice details:
                 <ul>
-                    <li>单位名称 (Organization Name)</li>
-                    <li>纳税人识别号 (Tax ID)</li>
-                    <li>发票类型 (Invoice Type: 普通发票/增值税专用发票)</li>
+                    <li>Affiliation (单位名称)</li>
+                    <li>Tax ID (纳税人识别号)</li>
+                    <li>Invoice Type (发票类型: 普通发票/增值税专用发票)</li>
                 </ul>
             </li>
         </ol>
         
         <h4>Important Notes:</h4>
         <ul>
-            <li>Hotel booking at Fraser Place <strong>requires completed payment</strong></li>
+            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee before Aug 10, 2025.</strong></li>
             <li>Invited speakers may request fee waiver before June 1</li>
             <li>Hotel amenities include complimentary gym and pool access</li>
             <li>Early booking strongly recommended due to high demand</li>
@@ -167,7 +167,7 @@ def process_data():
         
         <div class="footer">
             <p>Contact Information:</p>
-            <p><strong>Ms Xinli Yan</strong><br>
+            <p><strong>Ms. Xinli Yan</strong><br>
             Conference Coordinator<br>
             Email: <a href="mailto:iwqcvv2025@fudan.edu.cn">iwqcvv2025@fudan.edu.cn</a><br>
             Tel: +86-21-3124 3502</p>
