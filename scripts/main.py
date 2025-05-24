@@ -121,7 +121,7 @@ def process_data():
         <p>Dear {row["Title1"]} {row["Given Name"]} {row["Family Name"]}:</p>
     
         <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).
-        Please check the following website for the latest update: <a href="https://iwqcvv.org/">https://iwqcvv.org/</a></p>
+        Please check the following website for the latest update:<a href="https://iwqcvv.org/">https://iwqcvv.org/</a></p>
     
         <h4>Payment Instructions:</h4>
         <p>To complete the registration, please transfer the registration fee:</p>
@@ -166,12 +166,18 @@ def process_data():
             <li>Early booking strongly recommended due to high demand.</li>
         </ul>
 
-        <h4>For your information, here is a brief sumary of your registration information:</h4>
+        <h4>For your information, here is a brief summary of your registration information:</h4>
         <ul>
-            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee before Aug 10, 2025.</strong></li>
-            <li>Invited speakers may request fee waiver before June 1.</li>
-            <li>Hotel amenities include complimentary gym and pool access.</li>
-            <li>Early booking strongly recommended due to high demand.</li>
+            <li>Title: {row["Title1"]}</li>
+            <li>Given Name: {row["Given Name"]}</li>
+            <li>Family Name: {row["Family Name"]}</li>
+            <li>Affiliation: {row["Affiliation"]}</li>
+            <li>Email Address: {row["Email Address"]}</li>
+            <li>Phone Number: {row["Phone Number"]}</li>
+            <li>ID: {row["ID1"]}</li>
+            <li>Arrival Date: {row["Arrival Date"]}</li>
+            <li>Departure Date: {row["Departure Date"]}</li>
+            <li>Accommodation: {row["Accommodation"]}</li>
         </ul>
         
         <div class="footer">
