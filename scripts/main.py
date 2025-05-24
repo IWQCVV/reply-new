@@ -120,7 +120,8 @@ def process_data():
     <body>
         <p>Dear {row["Title1"]} {row["Given Name"]} {row["Family Name"]}:</p>
     
-        <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).</p>
+        <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).
+        Please check the following website for the latest update: <a href="https://iwqcvv.org/">https://iwqcvv.org/</a></p>
     
         <h4>Payment Instructions:</h4>
         <p>To complete the registration, please transfer the registration fee:</p>
@@ -138,14 +139,14 @@ def process_data():
                 <tr><td><strong>Address:</strong></td><td>上海市杨浦区邯郸路220号</td></tr>
                 <tr><td><strong>Account No.:</strong></td><td>03326708017003441</td></tr>
                 <tr><td><strong>Bank Name:</strong></td><td>中国农业银行上海翔殷支行<br>(Agricultural Bank of China, Shanghai Xiangyin Branch)</td></tr>
-                <tr><td><strong>Interbank Routing number:</strong></td><td>103290035039</td></tr>
+                <tr><td><strong>Interbank Routing Number:</strong></td><td>103290035039</td></tr>
             </table>
         </div>
         
         <p><strong>Please:</strong></p>
         <ol>
             <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo</li>
-            <li>Email payment confirmation to Ms Xinli Yan:
+            <li>Email payment confirmation to Ms. Xinli Yan:
                 <a href="mailto:iwqcvv2025@fudan.edu.cn" style="word-break: break-all;">iwqcvv2025@fudan.edu.cn</a>
             </li>
             <li>Provide invoice details:
@@ -160,9 +161,17 @@ def process_data():
         <h4>Important Notes:</h4>
         <ul>
             <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee before Aug 10, 2025.</strong></li>
-            <li>Invited speakers may request fee waiver before June 1</li>
-            <li>Hotel amenities include complimentary gym and pool access</li>
-            <li>Early booking strongly recommended due to high demand</li>
+            <li>Invited speakers may request fee waiver before June 1.</li>
+            <li>Hotel amenities include complimentary gym and pool access.</li>
+            <li>Early booking strongly recommended due to high demand.</li>
+        </ul>
+
+        <h4>For your information, here is a brief sumary of your registration information:</h4>
+        <ul>
+            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee before Aug 10, 2025.</strong></li>
+            <li>Invited speakers may request fee waiver before June 1.</li>
+            <li>Hotel amenities include complimentary gym and pool access.</li>
+            <li>Early booking strongly recommended due to high demand.</li>
         </ul>
         
         <div class="footer">
