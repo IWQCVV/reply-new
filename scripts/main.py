@@ -173,7 +173,7 @@ def process_data():
             <li>Family Name: {row["Family Name"]}</li>
             <li>Affiliation: {row["Affiliation"]}</li>
             <li>Email Address: {row["Email Address"]}</li>
-            <li>Phone Number: {row["Phone Number"]}</li>
+            <li>Phone Number: {row["Phone number"]}</li>
             <li>ID: {row["ID1"]}</li>
             <li>Arrival Date: {row["Arrival Date"]}</li>
             <li>Departure Date: {row["Departure Date"]}</li>
