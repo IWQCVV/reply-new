@@ -175,8 +175,8 @@ def process_data():
             <li>Email Address: {row["Email Address"]}</li>
             <li>Phone Number: {row["Phone number"]}</li>
             <li>ID: {row["ID1"]}</li>
-            <li>Arrival Date: {row["Arrival Date"]}</li>
-            <li>Departure Date: {row["Departure Date"]}</li>
+            <li>Arrival Date: {row["Arrival Date"].strftime('%Y-%m-%d')}</li>
+            <li>Departure Date: {row["Departure Date"].strftime('%Y-%m-%d')}</li>
             <li>Accommodation: {row["Accommodation"]}</li>
         </ul>
         
