@@ -178,6 +178,7 @@ def process_data():
             <li>Arrival Date: {row["Arrival Date"].strftime('%Y-%m-%d')}</li>
             <li>Departure Date: {row["Departure Date"].strftime('%Y-%m-%d')}</li>
             <li>Accommodation: {row["Accommodation"]}</li>
+            <li>Poster Submission: {row["Poster Submission"]}</li>
         </ul>
         
         <div class="footer">
