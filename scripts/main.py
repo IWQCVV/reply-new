@@ -121,7 +121,7 @@ def process_data():
         <p>Dear {row["Title1"]} {row["Given Name"]} {row["Family Name"]}:</p>
     
         <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).
-        Please check the following website for the latest update:<a href="https://iwqcvv.org/">https://iwqcvv.org/</a></p>
+        Please check the following website for the latest update: <a href="https://iwqcvv.org/">https://iwqcvv.org/</a></p>
     
         <h4>Payment Instructions:</h4>
         <p>To complete the registration, please transfer the registration fee:</p>
@@ -147,7 +147,7 @@ def process_data():
         <ol>
             <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo</li>
             <li>Email payment confirmation to Ms. Xinli Yan:
-                <a href="mailto:iwqcvv2025@fudan.edu.cn" style="word-break: break-all;">iwqcvv2025@fudan.edu.cn</a>
+                <a href="mailto:iwqcvv2025@fudan.edu.cn" style="word-break: break-all;">yanxinli@fudan.edu.cn</a>
             </li>
             <li>Provide invoice details:
                 <ul>
@@ -184,7 +184,7 @@ def process_data():
             <p>Contact Information:</p>
             <p><strong>Ms. Xinli Yan</strong><br>
             Conference Coordinator<br>
-            Email: <a href="mailto:iwqcvv2025@fudan.edu.cn">iwqcvv2025@fudan.edu.cn</a><br>
+            Email: <a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a><br>
             Tel: +86-21-3124 3502</p>
             
             <p style="margin-top: 15px;">Best regards,<br>
