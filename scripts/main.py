@@ -135,10 +135,10 @@ def process_data():
         <div class="bank-info">
 
             <table class="bank-info-table" cellpadding="8" style="width: 100%;">
-                <tr><td><strong>Account Name:</strong></td><td>复旦大学 (Fudan University)</td></tr>
+                <tr><td><strong>Account Name:</strong></td><td>复旦大学</td></tr>
                 <tr><td><strong>Address:</strong></td><td>上海市杨浦区邯郸路220号</td></tr>
                 <tr><td><strong>Account No.:</strong></td><td>03326708017003441</td></tr>
-                <tr><td><strong>Bank Name:</strong></td><td>中国农业银行上海翔殷支行<br>(Agricultural Bank of China, Shanghai Xiangyin Branch)</td></tr>
+                <tr><td><strong>Bank Name:</strong></td><td>中国农业银行上海翔殷支行</td></tr>
                 <tr><td><strong>Interbank Routing Number:</strong></td><td>103290035039</td></tr>
             </table>
         </div>
