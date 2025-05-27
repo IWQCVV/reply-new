@@ -145,9 +145,9 @@ def process_data():
         
         <p><strong>Please:</strong></p>
         <ol>
-            <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo</li>
+            <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo.</li>
             <li>Email payment confirmation to Ms. Xinli Yan:
-                <a href="mailto:yanxinli@fudan.edu.cn" style="word-break: break-all;">yanxinli@fudan.edu.cn</a>
+                <a href="mailto:yanxinli@fudan.edu.cn" style="word-break: break-all;">yanxinli@fudan.edu.cn.</a>
             </li>
             <li>Provide invoice details:
                 <ul>
@@ -161,7 +161,7 @@ def process_data():
         <h4>Important Notes:</h4>
         <ul>
             <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee before Aug 5, 2025.</strong></li>
-            <li>Invited speakers may request fee waiver before June 1.</li>
+            <li>Invited speakers may request fee waiver before June 30.</li>
             <li>Hotel amenities include complimentary gym and pool access.</li>
             <li>Early booking strongly recommended due to high demand.</li>
         </ul>
@@ -188,7 +188,7 @@ def process_data():
             Email: <a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a><br>
             Tel: +86-21-3124 3502</p>
             
-            <p style="margin-top: 15px;">Best regards,<br>
+            <p style="margin-top: 15px;">Best regards,<br><br>
             <strong>IWQCVV 2025 Organizing Committee</strong><br>
             Huangjun Zhu, Jiangwei Shang, You Zhou</p>
         </div>
