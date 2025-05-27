@@ -160,7 +160,7 @@ def process_data():
         
         <h4>Important Notes:</h4>
         <ul>
-            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee before <strong>Aug 5, 2025</strong>.</strong></li>
+            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee <strong>before Aug 5, 2025</strong>.</strong></li>
             <li>Invited speakers may request fee waiver before June 30.</li>
             <li>Hotel amenities include complimentary gym and pool access.</li>
             <li>Early booking strongly recommended due to high demand.</li>
