@@ -121,7 +121,7 @@ def process_data():
         <p>Dear {row["Title1"]} {row["Given Name"]} {row["Family Name"]}:</p>
     
         <p>Thank you very much for registering for the International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025).
-        Please check the following website for the latest update: <a href="https://iwqcvv.org/">https://iwqcvv.org/</a></p>
+        Please check the following website for the latest update: <a href="https://iwqcvv.org/">https://iwqcvv.org/</a>.</p>
     
         <h4>Payment Instructions:</h4>
         <p>To complete the registration, please transfer the registration fee:</p>
