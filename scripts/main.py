@@ -147,7 +147,7 @@ def process_data():
         <ol>
             <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo.</li>
             <li>Email payment confirmation to Ms. Xinli Yan:
-                <a href="mailto:yanxinli@fudan.edu.cn" style="word-break: break-all;">yanxinli@fudan.edu.cn.</a>
+                <a href="mailto:yanxinli@fudan.edu.cn" style="word-break: break-all;">yanxinli@fudan.edu.cn</a>.
             </li>
             <li>Provide invoice details:
                 <ul>
