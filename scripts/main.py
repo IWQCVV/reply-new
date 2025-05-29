@@ -182,7 +182,7 @@ def process_data():
         </ul>
         
         <div class="footer">
-            <p>Contact Information:</p>
+            <p><strong>Contact Information</strong>:</p>
             <p><strong>Ms. Xinli Yan</strong><br>
             Conference Coordinator<br>
             Email: <a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a><br>
