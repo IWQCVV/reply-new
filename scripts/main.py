@@ -28,7 +28,7 @@ def send_email(to_email, subject, body):
     msg["Subject"] = subject
     msg["From"] = SMTP_USER
     msg["To"] = to_email
-    msg.add_header('Content-Type', 'text/html')  # 确保内容类型声明
+    # msg.add_header('Content-Type', 'text/html')  # 确保内容类型声明
 
     try:
         with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
