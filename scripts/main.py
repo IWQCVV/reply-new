@@ -186,7 +186,7 @@ def process_data():
             <p><strong>Ms. Xinli Yan</strong><br>
             Conference Coordinator<br>
             Email: <a href="mailto:yanxinli@fudan.edu.cn">yanxinli@fudan.edu.cn</a><br>
-            Tel: +86-21-3124 3502</p>
+            Tel: +86 138-1837-5212</p>
             
             <p style="margin-top: 15px;">Best regards,<br><br>
             <strong>IWQCVV 2025 Organizing Committee</strong><br>
