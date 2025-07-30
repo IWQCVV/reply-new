@@ -138,7 +138,7 @@ def process_data():
                 <tr><td><strong>Account Name:</strong></td><td>复旦大学</td></tr>
                 <tr><td><strong>Address:</strong></td><td>上海市杨浦区邯郸路220号</td></tr>
                 <tr><td><strong>Account No.:</strong></td><td>03326708017003441</td></tr>
-                <tr><td><strong>Bank Name:</strong></td><td>中国农业银行上海翔殷支行</td></tr>
+                <tr><td><strong>Bank Name:</strong></td><td>中国农业银行股份有限公司上海五角场支行</td></tr>
                 <tr><td><strong>Interbank Routing Number:</strong></td><td>103290035039</td></tr>
             </table>
         </div>
