@@ -143,8 +143,8 @@ def process_data():
             </table>
         </div>
         <p>
-        If you do not have any Chinese bank account,
-        please transfer the registration fee to the following bank account before Aug 5, 2025.
+        If you do <strong>not</strong> have any Chinese bank account,
+        please transfer the registration fee to the following bank account <strong>before Aug 5, 2025</strong>.
         </p>
 
         <div class="bank-info">
