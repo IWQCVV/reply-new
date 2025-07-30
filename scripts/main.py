@@ -124,7 +124,7 @@ def process_data():
         Please check the following website for the latest update: <a href="https://iwqcvv.org/">https://iwqcvv.org/</a>.</p>
     
         <h4>Payment Instructions:</h4>
-        <p>To complete the registration, please transfer the registration fee:</p>
+        <p>To complete the registration, please transfer the registration fee( You are supposed to cover the transaction fee if necessary):</p>
         <ul>
             <li><span class="important">Regular:</span> CNY 2000</li>
             <li><span class="important">Students:</span> CNY 1500</li>
@@ -142,7 +142,24 @@ def process_data():
                 <tr><td><strong>Interbank Routing Number:</strong></td><td>103290035039</td></tr>
             </table>
         </div>
-        
+        <p>
+        If you do not have any Chinese bank account,
+        please transfer the registration fee to the following bank account before Aug 5, 2025.
+        </p>
+
+        <div class="bank-info">
+
+            <table class="bank-info-table" cellpadding="8" style="width: 100%;">
+                <tr><td><strong>Account Name:</strong></td><td>Fudan University</td></tr>
+                <tr><td><strong>Account No.:</strong></td><td>437759252978</td></tr>
+                <tr><td><strong>Bank Name:</strong></td><td>Bank of China Shanghai Fudan Sub－Branch</td></tr>
+                <tr><td><strong>Address:</strong></td><td>No.220.HanDanRoad, Shanghai, China, 200433</td></tr>
+                <tr><td><strong>Bank Swift Code:</strong></td><td>BKCHCNBJ300</td></tr>
+                <tr><td><strong>CNAPS:</strong></td><td>104290085263</td></tr>
+            </table>
+        </div>
+
+
         <p><strong>Please:</strong></p>
         <ol>
             <li>Indicate <strong class="important">the participant's full name</strong> in the transfer memo.</li>
