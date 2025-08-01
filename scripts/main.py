@@ -130,7 +130,7 @@ def process_data():
             <li><span class="important">Students:</span> CNY 1500</li>
         </ul>
         
-        <p>to the following bank account <strong>before Aug 5, 2025</strong>.</p>
+        <p>to the following bank account <strong>before Aug 10, 2025</strong>.</p>
         
         <div class="bank-info">
 
@@ -144,7 +144,7 @@ def process_data():
         </div>
         <p>
         If you do <strong>not</strong> have any Chinese bank account,
-        please transfer the registration fee to the following bank account <strong>before Aug 5, 2025</strong>.
+        please transfer the registration fee to the following bank account <strong>before Aug 10, 2025</strong>.
         </p>
 
         <div class="bank-info">
@@ -177,7 +177,7 @@ def process_data():
         
         <h4>Important Notes:</h4>
         <ul>
-            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee <strong>before Aug 5, 2025</strong>.</strong></li>
+            <li>To book Hotel Fraser Place Wujiaochang Shanghai through the Organizer, it is necesary to transfer the registration fee <strong>before Aug 10, 2025</strong>.</strong></li>
             <li>Invited speakers may request fee waiver before June 30.</li>
             <li>Hotel amenities include complimentary gym and pool access.</li>
             <li>Early booking strongly recommended due to high demand.</li>
